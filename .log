@@ -1,2 +1,6 @@
 docker build . -t im1
 docker run im1
+
+docker-compose up
+docker build -t app . && docker run --rm app
+> conclusion: we can override Dockerfile's CMD with docker-compose.yml's command
